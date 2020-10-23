@@ -1,0 +1,5 @@
+server:
+  port: 4000
+spring:
+  activemq:
+    broker-url: tcp://johnyu.cn:61616

@@ -1,0 +1,13 @@
+spring:
+  activemq:
+    broker-url: tcp://johnyu.cn:61616
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123
+server:
+  port: 3000
+
+mybatis:
+  config-location: classpath:mybatis-config.xml

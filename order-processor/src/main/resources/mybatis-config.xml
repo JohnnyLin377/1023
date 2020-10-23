@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!--    此方式在被SpringBoot的配置文件时，不可用需要使用@PropertySource("classpath:conf.properties")-->
+    <!--    <properties resource="conf.properties">-->
+    <!--    <property name="driver" value="com.mysql.cj.jdbc.Driver"/> -->
+    <!--    </properties>-->
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <typeAliases>
+        <package name="commons.pojo"/>
+    </typeAliases>
+
+
+    <mappers>
+        <mapper resource="mapping/OrderMapper.xml"></mapper>
+    </mappers>
+</configuration>
